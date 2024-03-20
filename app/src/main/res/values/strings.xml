@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">BracNav</string>
+    <string-array name="spinnerSource">
+        <item>12F-32L</item>
+        <item>12F-33L</item>
+        <item>12F-34L</item>
+        <item>12F-35L</item>
+        <item>12F-36L</item>
+        <item>12F-37L</item>
+        <item>12F-38L</item>
+        <item>12F-39L</item>
+    </string-array>
+    <string-array name="spinnerDestination">
+        <item>12F-32L</item>
+        <item>12F-33L</item>
+        <item>12F-34L</item>
+        <item>12F-35L</item>
+        <item>12F-36L</item>
+        <item>12F-37L</item>
+        <item>12F-38L</item>
+        <item>12F-39L</item>
+    </string-array>
 </resources>
