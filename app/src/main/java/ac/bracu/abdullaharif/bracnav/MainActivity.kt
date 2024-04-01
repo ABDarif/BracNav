@@ -1,5 +1,6 @@
 package ac.bracu.abdullaharif.bracnav
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -37,16 +38,19 @@ class MainActivity : AppCompatActivity() {
             spinner2.adapter = adapter
         }
         val locateToast = "This will pinpoint to your current location"
-        val navigateToast = "This will perform the navigation from source to destination on the map"
+        // val navigateToast = "This will perform the navigation from source to destination on the map"
         val duration = Toast.LENGTH_LONG
 
         val btn = findViewById<Button>(R.id.btnNav)
         btn.setOnClickListener {
-            Toast.makeText(this, navigateToast, duration).show()
+            // Toast.makeText(this, navigateToast, duration).show()
+            val intent = Intent(this, MapActivity::class.java)
+            startActivity(intent)
         }
         val btn2 = findViewById<Button>(R.id.rbYourLocation)
         btn2.setOnClickListener {
             Toast.makeText(this, locateToast, duration).show()
         }
+
     }
 }
