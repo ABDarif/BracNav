@@ -43,21 +43,39 @@ class MapActivity : AppCompatActivity() {
 
             // Declaring start and end
             // coordinates on the canvas
-            val mStartX = 195F
-            val mStartY = 195F
-            val mStopX = 265F
-            val mStopY = 195F
+            // 1
+
+            val mStartX = 590F
+            val mStartY = 755F
+            val mStopX = 590F
+            val mStopY = 355F
 
             // Draw the line
             mCanvas.drawLine(mStartX, mStartY, mStopX, mStopY, mPaint)
 
-            val mStartX2 = 0F
-            val mStartY2 = 0F
-            val mStopX2 = 0F
-            val mStopY2 = 0F
+            // Declaring start and end
+            // coordinates on the canvas
+            // 2
+
+            val mStartX2 = 590F
+            val mStartY2 = 355F
+            val mStopX2 = 675F
+            val mStopY2 = 355F
 
             // Draw the line
             mCanvas.drawLine(mStartX2, mStartY2, mStopX2, mStopY2, mPaint)
+//
+//            // Declaring start and end
+//            // coordinates on the canvas
+//            // 3
+//
+            val mStartX3 = 675F
+            val mStartY3 = 355F
+            val mStopX3 = 675F
+            val mStopY3 = 215F
+
+            // Draw the line
+            mCanvas.drawLine(mStartX3, mStartY3, mStopX3, mStopY3, mPaint)
 
             // Set this bitmap in the ImageView
             mImageView.setImageBitmap(mBitmap)
