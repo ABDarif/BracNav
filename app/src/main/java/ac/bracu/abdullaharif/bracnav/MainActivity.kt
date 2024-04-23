@@ -9,6 +9,7 @@ import android.widget.Spinner
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -47,6 +48,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, MapActivity::class.java)
             startActivity(intent)
         }
+
         val btn2 = findViewById<Button>(R.id.rbYourLocation)
         btn2.setOnClickListener {
             Toast.makeText(this, locateToast, duration).show()

@@ -13,7 +13,8 @@
         android:layout_marginTop="100dp"
         android:text="Source"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="6dp" />
+        tools:layout_editor_absoluteX="6dp"
+        tools:ignore="MissingConstraints" />
 
     <Spinner
         android:id="@+id/spinnerDestination"
