@@ -41,14 +41,16 @@ class MapActivity : AppCompatActivity() {
             mPaint.strokeWidth = 5F
             mPaint.isAntiAlias = true
 
+            // 12F-31L to 12H-33L
+
             // Declaring start and end
             // coordinates on the canvas
             // 1
 
-            val mStartX = 590F
-            val mStartY = 755F
-            val mStopX = 590F
-            val mStopY = 355F
+            val mStartX = 190F
+            val mStartY = 425F
+            val mStopX = 190F
+            val mStopY = 365F
 
             // Draw the line
             mCanvas.drawLine(mStartX, mStartY, mStopX, mStopY, mPaint)
@@ -57,22 +59,22 @@ class MapActivity : AppCompatActivity() {
             // coordinates on the canvas
             // 2
 
-            val mStartX2 = 590F
-            val mStartY2 = 355F
-            val mStopX2 = 675F
-            val mStopY2 = 355F
+            val mStartX2 = 190F
+            val mStartY2 = 365F
+            val mStopX2 = 105F
+            val mStopY2 = 365F
 
             // Draw the line
             mCanvas.drawLine(mStartX2, mStartY2, mStopX2, mStopY2, mPaint)
-//
-//            // Declaring start and end
-//            // coordinates on the canvas
-//            // 3
-//
-            val mStartX3 = 675F
-            val mStartY3 = 355F
-            val mStopX3 = 675F
-            val mStopY3 = 215F
+
+            // Declaring start and end
+            // coordinates on the canvas
+            // 3
+
+            val mStartX3 = 105F
+            val mStartY3 = 365F
+            val mStopX3 = 105F
+            val mStopY3 = 205F
 
             // Draw the line
             mCanvas.drawLine(mStartX3, mStartY3, mStopX3, mStopY3, mPaint)
