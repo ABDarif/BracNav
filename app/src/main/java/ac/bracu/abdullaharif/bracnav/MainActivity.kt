@@ -1,6 +1,7 @@
 package ac.bracu.abdullaharif.bracnav
 
 import android.content.Intent
+import android.database.sqlite.SQLiteDatabase
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -9,10 +10,13 @@ import android.widget.Spinner
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
+    private val databaseHelper: DatabaseHelper = DatabaseHelper(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val sqLiteDatabase = databaseHelper.writableDatabase
 
         val spinner: Spinner = findViewById(R.id.spinnerSource)
         // Create an ArrayAdapter using the string array and a default spinner layout.
